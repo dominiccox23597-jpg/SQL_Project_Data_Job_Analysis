@@ -1,2 +1,3 @@
-SELECT DISTINCT job_country
-FROM job_postings_fact;
+SELECT *
+FROM skills_dim
+LIMIT 10;
