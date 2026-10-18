@@ -23,8 +23,8 @@ ORDER BY
 LIMIT 10;
 
 /* The query above gives us the top 10 paying skills in the UK for data analyst roles.
-But this could be swewed towards niche skills that only appear in a small number of positions.
-So using the results of the previous query where we foudn out the top 5 demanded skills we could find out the average
+But this could be skewed towards niche skills that only appear in a small number of positions.
+So using the results of the previous query where we found out the top 5 demanded skills we could find out the average
 salary for jobs requiring these skills
 */
 
@@ -47,7 +47,7 @@ ORDER BY
 /*This gives us the avg salary for the top 5 demanded skills that we discovered in the previous query.
 But in the query above these skills are hardcoded, what if when more job adverts are added to the database the most demanded
 skills shift over time. We could use a CTE to futureproof our query, discovering the top 5 demanded skills, and then calculating
-the avg salary amongs them.
+the avg salary among them.
 */
 
 WITH most_demanded_skills AS (
