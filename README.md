@@ -12,15 +12,15 @@ Through the course I developed my understanding in how SQL queries are structure
 
 This began through the simple basics of SELECT, FROM, & WHERE clauses.
 
-Following on from this I learned a variety of commonly used aggregations like SUM, COUNT, AVG, MIN, & MAX, and undertsood the importance of GROUP BY clauses for these aggregations to work correctly. Also the added power to filter these aggregated results using the HAVING clause, and/or ordering these results using the ORDER BY clause.
+Following on from this I learned a variety of commonly used aggregations like SUM, COUNT, AVG, MIN, & MAX, and understood the importance of using GROUP BY clauses for these aggregations to work correctly. Also the added power to filter these aggregated results using the HAVING clause, and/or ordering these results using the ORDER BY clause.
 
 It's rare for all of our required data to be in the same table so I learned how to join tables together using JOIN clauses (most commmonly INNER, & LEFT OUTER)
 
-Finally for more complex analysis I leanred how to use CTE's for multi-step analysis
+Finally for more complex analysis I learned how to use CTE's for multi-step analysis
 # Tools I Used
 - **SQL**: The language to query the database
 - **PostgreSQL**: The chosen databse management system
-- **Visual Studio Code**: My go-to for databse management and executing SQL queries
+- **Visual Studio Code**: My go-to for database management and executing SQL queries
 - **Git & GitHub**: Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking
 # The Analysis
 This project outlines the most in demand skills, and the top paying skills for data analysts in the UK. 
@@ -51,10 +51,10 @@ ORDER BY
 LIMIT 10;
 ```
 
-The highest paying role was for a market data analyst lead paying £180,000. There were a diverse range of employers from different sectors that were posting these adverts from banks and investment platforms like Deutsche Bank & AJ Bell to software companies like DeepMind & Darktrace.
+The highest paying role was for a market data analyst lead paying £180,000. There were a diverse range of employers from different sectors that were posting these jobs from banks and investment platforms like Deutsche Bank & AJ Bell to software companies like DeepMind & Darktrace.
 
 ### 2. What are the top paying skills for data analysts?
-For this I used the 1st query above in a CTE and used 2 INNER JOINs with 2 separate tablez containing all of the skills listed across these adverts to return the skills that these top 10 paying jobs required.
+For this I used the 1st query above in a CTE and used 2 INNER JOINs with 2 separate tables containing all of the skills listed across these adverts to return the skills that these top 10 paying jobs required.
 
 ``` sql
 With top_paying_jobs AS (
@@ -122,7 +122,7 @@ The results from this query show that SQL & Excel are comfortably the most deman
 
 ### 4. Top paying high demand skills
 
-Here I looked at what the average salaries were for by skill
+Here I looked at what the average salaries were by skill
 
 ```sql
 SELECT
